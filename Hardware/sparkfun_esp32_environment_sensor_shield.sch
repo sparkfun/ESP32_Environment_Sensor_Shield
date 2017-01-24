@@ -31059,27 +31059,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="330OHM" prefix="R">
-<description>&lt;h3&gt;330Ω resistor&lt;/h3&gt;
-&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0603-1/10W-1%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-00818"/>
-<attribute name="VALUE" value="330"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-Capacitors">
@@ -31517,12 +31496,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R2" library="SparkFun-Resistors" deviceset="10KOHM" device="-0603-1/10W-1%" value="10k"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="R11" library="SparkFun-Resistors" deviceset="330OHM" device="-0603-1/10W-1%" value="330"/>
-<part name="C5" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
-<part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R5" library="SparkFun-Resistors" deviceset="330OHM" device="-0603-1/10W-1%" value="330"/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
-<part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_03" device=""/>
 <part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -31734,12 +31707,6 @@ or DS18B20 (SEN-11050)</text>
 <attribute name="VALUE" x="46.99" y="63.754" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="SUPPLY14" gate="G$1" x="111.76" y="63.5"/>
-<instance part="R11" gate="G$1" x="119.38" y="48.26"/>
-<instance part="C5" gate="G$1" x="127" y="40.64"/>
-<instance part="GND13" gate="1" x="127" y="33.02" rot="MR0"/>
-<instance part="R5" gate="G$1" x="53.34" y="43.18"/>
-<instance part="C3" gate="G$1" x="60.96" y="35.56"/>
-<instance part="GND7" gate="1" x="60.96" y="27.94"/>
 <instance part="SUPPLY6" gate="G$1" x="45.72" y="68.58"/>
 <instance part="J3" gate="J$1" x="96.52" y="10.16"/>
 <instance part="GND14" gate="1" x="106.68" y="2.54"/>
@@ -31880,16 +31847,6 @@ or DS18B20 (SEN-11050)</text>
 <wire x1="83.82" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="48.26" x2="81.28" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="127" y1="35.56" x2="127" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="60.96" y1="30.48" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J3" gate="J$1" pin="1"/>
@@ -32251,13 +32208,13 @@ or DS18B20 (SEN-11050)</text>
 </net>
 <net name="RAINFALL" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="127" y1="48.26" x2="127" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="127" y1="48.26" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
-<junction x="127" y="48.26"/>
-<label x="129.54" y="48.26" size="1.27" layer="95" xref="yes"/>
+<label x="114.3" y="48.26" size="1.27" layer="95" xref="yes"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="48.26" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<junction x="111.76" y="48.26"/>
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="12"/>
@@ -32310,13 +32267,13 @@ or DS18B20 (SEN-11050)</text>
 </net>
 <net name="WIND_SPEED" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="43.18" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="43.18" x2="63.5" y2="43.18" width="0.1524" layer="91"/>
-<junction x="60.96" y="43.18"/>
-<label x="63.5" y="43.18" size="1.27" layer="95" xref="yes"/>
+<label x="48.26" y="43.18" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="G$1" pin="ANN-2"/>
+<wire x1="35.56" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="55.88" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
+<junction x="45.72" y="43.18"/>
+<wire x1="48.26" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="14"/>
@@ -32324,28 +32281,6 @@ or DS18B20 (SEN-11050)</text>
 <pinref part="J4" gate="G$1" pin="9"/>
 <wire x1="160.02" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
 <label x="160.02" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RAIN_OUT" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="48.26" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
-<junction x="111.76" y="48.26"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="WIND_OUT" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="ANN-2"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="55.88" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<junction x="45.72" y="43.18"/>
 </segment>
 </net>
 <net name="EXT_TEMPERATURE" class="0">
