@@ -35505,7 +35505,7 @@ or DS18B20 (SEN-11050)</text>
 <wire x1="101.6" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="INT_TSL2561" class="0">
+<net name="TSL2561_INT" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="INT"/>
 <wire x1="124.46" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
