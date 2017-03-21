@@ -33262,64 +33262,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="DFN-6-2X2">
-<description>&lt;h3&gt;6-Pin Dual-Flat No-Lead (DFN) (2.0 x 2.0 mm)&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.mouser.com/ds/2/588/ams_sl2560-e58-488842.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;
-&lt;li&gt;Pin Count: 6&lt;/li&gt;
-&lt;li&gt;Dimensions: 2.0 x 2.0 x 0.65 mm&lt;/li&gt;
-&lt;li&gt;Pitch: 0.65 mm&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Devices Using:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;TSL2561&lt;/li&gt;
-&lt;/ul&gt;</description>
-<circle x="-0.8382" y="1.3716" radius="0.1" width="0.3048" layer="21"/>
-<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="51"/>
-<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="51"/>
-<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="51"/>
-<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="51"/>
-<wire x1="-1" y1="1.0508" x2="1" y2="1.0508" width="0.127" layer="21"/>
-<wire x1="-1" y1="-1.0508" x2="1" y2="-1.0508" width="0.127" layer="21"/>
-<smd name="1" x="-0.775" y="0.65" dx="1.05" dy="0.3" layer="1" rot="R180"/>
-<smd name="2" x="-0.775" y="0" dx="1.05" dy="0.3" layer="1" roundness="100"/>
-<smd name="3" x="-0.775" y="-0.65" dx="1.05" dy="0.3" layer="1" roundness="100"/>
-<smd name="4" x="0.775" y="-0.65" dx="1.05" dy="0.3" layer="1" roundness="100"/>
-<smd name="5" x="0.775" y="0" dx="1.05" dy="0.3" layer="1" roundness="100"/>
-<smd name="6" x="0.775" y="0.65" dx="1.05" dy="0.3" layer="1" roundness="100"/>
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
-<package name="TMB-6">
-<description>&lt;h3&gt;6-Pin TMB&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.mouser.com/ds/2/588/ams_sl2560-e58-488842.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;
-&lt;li&gt;Pin Count: 6&lt;/li&gt;
-&lt;li&gt;Area: 3.8 x 2.6 x 1.35 mm&lt;/li&gt;
-&lt;li&gt;Pitch: 0.9 mm&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Devices Using:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;TSL2561&lt;/li&gt;
-&lt;/ul&gt;</description>
-<circle x="-1.9" y="2.0206" radius="0.254" width="0" layer="21"/>
-<wire x1="-1.9" y1="1.3" x2="-1.9" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="-1.9" y1="-1.3" x2="1.9" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="1.9" y1="-1.3" x2="1.9" y2="1.3" width="0.127" layer="51"/>
-<wire x1="1.9" y1="1.3" x2="-1.9" y2="1.3" width="0.127" layer="51"/>
-<wire x1="-1.9" y1="1.5238" x2="1.9" y2="1.5238" width="0.2032" layer="21"/>
-<wire x1="-1.9" y1="-1.5238" x2="1.9" y2="-1.5238" width="0.2032" layer="21"/>
-<smd name="1" x="-1.8" y="0.95" dx="1.6" dy="0.7" layer="1"/>
-<smd name="2" x="-1.8" y="0" dx="1.6" dy="0.7" layer="1"/>
-<smd name="3" x="-1.8" y="-0.95" dx="1.6" dy="0.7" layer="1"/>
-<smd name="4" x="1.8" y="-0.95" dx="1.6" dy="0.7" layer="1"/>
-<smd name="5" x="1.8" y="0" dx="1.6" dy="0.7" layer="1"/>
-<smd name="6" x="1.8" y="0.95" dx="1.6" dy="0.7" layer="1"/>
-<text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
 <package name="LGA-8-2.5X2.5">
 <description>&lt;h3&gt;LGA 8-Pin &amp;ndash;  2.5mm x 2.5mm, 0.65mm Pitch&lt;/h3&gt;
 &lt;p&gt;&lt;a href=https://cdn.sparkfun.com/assets/learn_tutorials/4/1/9/BST-BME280_DS001-10.pdf&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;
@@ -33360,24 +33302,31 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.15" y1="-1.15" x2="0.5" y2="-0.8" layer="51" rot="R180"/>
 <rectangle x1="0.8" y1="-1.15" x2="1.15" y2="-0.8" layer="51" rot="R180"/>
 </package>
+<package name="CHIPLED-6">
+<description>CHIPLED-6 package &lt;br&gt;
+Used by APDS-9301</description>
+<smd name="P3" x="-1.65" y="0" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<smd name="P6" x="1.65" y="0" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<smd name="P2" x="-1.65" y="1.05" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<smd name="P4" x="-1.65" y="-1.05" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<smd name="P1" x="1.65" y="1.05" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<smd name="P5" x="1.65" y="-1.05" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<rectangle x1="1.2" y1="-1.3" x2="2.1" y2="-0.8" layer="31"/>
+<rectangle x1="1.2" y1="-0.25" x2="2.1" y2="0.25" layer="31"/>
+<rectangle x1="-2.1" y1="-0.25" x2="-1.2" y2="0.25" layer="31"/>
+<rectangle x1="1.2" y1="0.8" x2="2.1" y2="1.3" layer="31"/>
+<rectangle x1="-2.1" y1="-1.3" x2="-1.2" y2="-0.8" layer="31"/>
+<rectangle x1="-2.1" y1="0.8" x2="-1.2" y2="1.3" layer="31"/>
+<wire x1="-1.3" y1="-1.1" x2="1.3" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="1.1" x2="1.3" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="1.1" x2="-1.3" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1.1" x2="1.3" y2="-1.1" width="0.127" layer="21"/>
+<circle x="1.81" y="2" radius="0.2" width="0.127" layer="21"/>
+<text x="-1.016" y="0.381" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-0.508" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
-<symbol name="TSL2561">
-<description>&lt;h3&gt;TAOS TSL2561 Digital Luminosity (Light) Sensor&lt;/h3&gt;
-&lt;p&gt;The TSL2561 is a light-to-digital converter that transform light intensity to a digital signal output via I2C interface. The device combines one broadband photodiode (visible plus infrared) and one infrared-responding photodiode on a single CMOS integrated circuit capable of providing a near-photopic response over an effective 20-bit dynamic range (16-bit resolution). Two integrating ADCs convert the photodiode currents to a digital output that represents the irradiance measured on each channel. This digital output can be input to a microprocessor where illuminance (ambient light level) in lux is derived using an empirical formula to approximate the human eye response. The TSL2561 device supports a traditional level style interrupt that remains asserted until the firmware clears it.&lt;/p&gt;</description>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="ADDR" x="12.7" y="0" length="short" direction="in" rot="R180"/>
-<pin name="GND" x="12.7" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="INT" x="-10.16" y="-5.08" length="short" direction="out"/>
-<pin name="SCL" x="-10.16" y="5.08" length="short" direction="in"/>
-<pin name="SDA" x="-10.16" y="2.54" length="short"/>
-<pin name="VDD" x="12.7" y="5.08" length="short" direction="pwr" rot="R180"/>
-<text x="-7.62" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-7.62" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
-</symbol>
 <symbol name="BME280">
 <description>&lt;h3&gt;Bosch BME280 &amp;ndash; Combined Humidity and Pressure Sensor&lt;/h3&gt;
 &lt;p&gt;The  BME280 is as combined digital humidity, pressure and temperature sensor based on proven sensing principles. The sensor module is housed in an extremely compact metal-lid LGA package  with a footprint of only 2.5×2.5mm² with a height of 0.93mm. Its small dimensions and its low power consumption allow the implementation in battery driven devices such as handsets,  GPS modules or watches.&lt;/p&gt;
@@ -33396,50 +33345,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-10.16" y="7.874" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-10.414" size="1.778" layer="95" align="top-left">&gt;VALUE</text>
 </symbol>
+<symbol name="APDS-9301">
+<description>APDS-9301</description>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<pin name="GND" x="-12.7" y="2.54" length="middle"/>
+<pin name="ADDR" x="-12.7" y="0" length="middle"/>
+<pin name="SCL" x="-12.7" y="-2.54" length="middle"/>
+<pin name="SDA" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="INT" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="VDD" x="12.7" y="2.54" length="middle" rot="R180"/>
+<text x="-7.62" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="5.842" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="TSL2561" prefix="U">
-<description>&lt;h3&gt;TAOS TSL2561 Digital Luminosity (Light) Sensor&lt;/h3&gt;
-&lt;p&gt;The TSL2561 is a light-to-digital converter that transform light intensity to a digital signal output via I2C interface. The device combines one broadband photodiode (visible plus infrared) and one infrared-responding photodiode on a single CMOS integrated circuit capable of providing a near-photopic response over an effective 20-bit dynamic range (16-bit resolution). Two integrating ADCs convert the photodiode currents to a digital output that represents the irradiance measured on each channel. This digital output can be input to a microprocessor where illuminance (ambient light level) in lux is derived using an empirical formula to approximate the human eye response. The TSL2561 device supports a traditional level style interrupt that remains asserted until the firmware clears it.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.mouser.com/ds/2/588/ams_sl2560-e58-488842.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;SparkFun Products&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12055"&gt;SparkFun Luminosity Sensor Breakout - TSL2561&lt;/a&gt; (SEN-12055)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="TSL2561" x="0" y="0"/>
-</gates>
-<devices>
-<device name="FN" package="DFN-6-2X2">
-<connects>
-<connect gate="G$1" pin="ADDR" pad="2"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="INT" pad="5"/>
-<connect gate="G$1" pin="SCL" pad="4"/>
-<connect gate="G$1" pin="SDA" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-11791"/>
-</technology>
-</technologies>
-</device>
-<device name="T" package="TMB-6">
-<connects>
-<connect gate="G$1" pin="ADDR" pad="2"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="INT" pad="5"/>
-<connect gate="G$1" pin="SCL" pad="4"/>
-<connect gate="G$1" pin="SDA" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="BME280" prefix="U" uservalue="yes">
 <description>&lt;h3&gt;Bosch BME280 &amp;ndash; Combined Humidity and Pressure Sensor&lt;/h3&gt;
 &lt;p&gt;The  BME280 is as combined digital humidity, pressure and temperature sensor based on proven sensing principles. The sensor module is housed in an extremely compact metal-lid LGA package  with a footprint of only 2.5×2.5mm² with a height of 0.93mm. Its small dimensions and its low power consumption allow the implementation in battery driven devices such as handsets,  GPS modules or watches.&lt;/p&gt;
@@ -33466,6 +33388,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="IC-13090" constant="no"/>
 <attribute name="VALUE" value="BME280" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APDS-9301" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="APDS-9301" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CHIPLED-6">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="P3"/>
+<connect gate="G$1" pin="GND" pad="P2"/>
+<connect gate="G$1" pin="INT" pad="P6"/>
+<connect gate="G$1" pin="SCL" pad="P4"/>
+<connect gate="G$1" pin="SDA" pad="P5"/>
+<connect gate="G$1" pin="VDD" pad="P1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13662"/>
+<attribute name="VALUE" value="APDS-9301"/>
 </technology>
 </technologies>
 </device>
@@ -34842,7 +34787,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J8" library="SparkFun-Connectors" deviceset="I2C_STANDARD" device=""/>
 <part name="GND18" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY21" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="U3" library="SparkFun-Sensors" deviceset="TSL2561" device="FN"/>
 <part name="U1" library="SparkFun-Sensors" deviceset="BME280" device="" value="BME280"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -34924,6 +34868,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY23" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".1_INCH"/>
+<part name="U3" library="SparkFun-Sensors" deviceset="APDS-9301" device="" value="APDS-9301"/>
 </parts>
 <sheets>
 <sheet>
@@ -34939,9 +34884,9 @@ Float
 VDD</text>
 <text x="111.252" y="109.22" size="1.27" layer="97">I2C Address
 =======
-0x29
-0x39
-0x49</text>
+0x51
+0x71
+0x91</text>
 <text x="15.24" y="111.76" size="1.27" layer="97">BME280
 =====
 VDD Range: 1.71-3.6V
@@ -35047,20 +34992,19 @@ or DS18B20 (SEN-11050)</text>
 <instance part="J8" gate="G$1" x="175.26" y="165.1"/>
 <instance part="GND18" gate="1" x="185.42" y="157.48"/>
 <instance part="SUPPLY21" gate="G$1" x="185.42" y="175.26"/>
-<instance part="U3" gate="G$1" x="114.3" y="99.06" rot="MR0"/>
 <instance part="U1" gate="U1" x="20.32" y="93.98"/>
 <instance part="GND1" gate="1" x="5.08" y="81.28"/>
-<instance part="GND12" gate="1" x="99.06" y="88.9"/>
+<instance part="GND12" gate="1" x="101.6" y="91.44"/>
 <instance part="JP3" gate="G$1" x="91.44" y="99.06" rot="R180"/>
 <instance part="SUPPLY12" gate="G$1" x="91.44" y="119.38"/>
 <instance part="GND11" gate="1" x="91.44" y="88.9"/>
-<instance part="SUPPLY13" gate="G$1" x="99.06" y="106.68"/>
+<instance part="SUPPLY13" gate="G$1" x="132.08" y="104.14"/>
 <instance part="R13" gate="G$1" x="149.86" y="160.02" rot="R90"/>
 <instance part="R14" gate="G$1" x="165.1" y="160.02" rot="R90"/>
 <instance part="SUPPLY18" gate="G$1" x="157.48" y="177.8"/>
-<instance part="C6" gate="G$1" x="137.16" y="106.68"/>
-<instance part="SUPPLY17" gate="G$1" x="137.16" y="114.3"/>
-<instance part="GND15" gate="1" x="137.16" y="99.06"/>
+<instance part="C6" gate="G$1" x="139.7" y="116.84" rot="MR0"/>
+<instance part="SUPPLY17" gate="G$1" x="139.7" y="124.46"/>
+<instance part="GND15" gate="1" x="139.7" y="109.22"/>
 <instance part="SUPPLY1" gate="G$1" x="5.08" y="101.6"/>
 <instance part="R7" gate="G$1" x="91.44" y="111.76" rot="R90"/>
 <instance part="R4" gate="G$1" x="50.8" y="104.14" rot="R90"/>
@@ -35142,6 +35086,7 @@ or DS18B20 (SEN-11050)</text>
 <instance part="SUPPLY23" gate="G$1" x="76.2" y="60.96"/>
 <instance part="GND7" gate="1" x="76.2" y="33.02" rot="MR0"/>
 <instance part="LOGO3" gate="G$1" x="33.782" y="12.446"/>
+<instance part="U3" gate="G$1" x="116.84" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -35166,12 +35111,6 @@ or DS18B20 (SEN-11050)</text>
 <wire x1="5.08" y1="83.82" x2="5.08" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="99.06" y1="91.44" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="GND"/>
-<wire x1="99.06" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="91.44" y1="91.44" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
@@ -35179,7 +35118,7 @@ or DS18B20 (SEN-11050)</text>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="137.16" y1="101.6" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="111.76" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
@@ -35286,6 +35225,12 @@ or DS18B20 (SEN-11050)</text>
 <junction x="215.9" y="43.18"/>
 <junction x="215.9" y="50.8"/>
 </segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="101.6" y1="93.98" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<wire x1="101.6" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -35311,9 +35256,9 @@ or DS18B20 (SEN-11050)</text>
 <label x="38.1" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="SDA"/>
-<wire x1="124.46" y1="101.6" x2="127" y2="101.6" width="0.1524" layer="91"/>
-<label x="127" y="101.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="104.14" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
+<label x="99.06" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -35346,9 +35291,9 @@ or DS18B20 (SEN-11050)</text>
 <label x="38.1" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="SCL"/>
-<wire x1="124.46" y1="104.14" x2="127" y2="104.14" width="0.1524" layer="91"/>
-<label x="127" y="104.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="129.54" y1="96.52" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
+<label x="134.62" y="96.52" size="1.27" layer="95" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -35374,15 +35319,9 @@ or DS18B20 (SEN-11050)</text>
 <pinref part="SUPPLY21" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="SUPPLY13" gate="G$1" pin="3.3V"/>
-<wire x1="99.06" y1="104.14" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VDD"/>
-<wire x1="101.6" y1="104.14" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="SUPPLY17" gate="G$1" pin="3.3V"/>
-<wire x1="137.16" y1="114.3" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="124.46" x2="139.7" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="U1" pin="VDD"/>
@@ -35497,19 +35436,25 @@ or DS18B20 (SEN-11050)</text>
 <pinref part="SUPPLY23" gate="G$1" pin="3.3V"/>
 <wire x1="76.2" y1="60.96" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="VDD"/>
+<pinref part="SUPPLY13" gate="G$1" pin="3.3V"/>
+<wire x1="129.54" y1="101.6" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="101.6" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="ADDR_TSL2561" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="ADDR"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="ADDR"/>
 </segment>
 </net>
-<net name="TSL2561_INT" class="0">
+<net name="LUX_INT" class="0">
 <segment>
+<label x="134.62" y="99.06" size="1.27" layer="95" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="INT"/>
-<wire x1="124.46" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
-<label x="127" y="93.98" size="1.27" layer="95" xref="yes"/>
+<wire x1="134.62" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="236.22" y1="55.88" x2="213.36" y2="55.88" width="0.1524" layer="91"/>
