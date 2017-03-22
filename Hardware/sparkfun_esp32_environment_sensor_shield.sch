@@ -33317,10 +33317,10 @@ Used by APDS-9301</description>
 <rectangle x1="1.2" y1="0.8" x2="2.1" y2="1.3" layer="31"/>
 <rectangle x1="-2.1" y1="-1.3" x2="-1.2" y2="-0.8" layer="31"/>
 <rectangle x1="-2.1" y1="0.8" x2="-1.2" y2="1.3" layer="31"/>
-<wire x1="-1.3" y1="-1.1" x2="1.3" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="-1.3" y1="1.1" x2="1.3" y2="1.1" width="0.127" layer="21"/>
-<wire x1="-1.3" y1="1.1" x2="-1.3" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="1.3" y1="1.1" x2="1.3" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-1.3" y1="-1.1" x2="1.3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="1.1" x2="1.3" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="1.1" x2="-1.3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="1.3" y1="1.1" x2="1.3" y2="-1.1" width="0.2032" layer="21"/>
 <circle x="1.81" y="2" radius="0.2" width="0.127" layer="21"/>
 <text x="-1.016" y="0.381" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-0.508" size="0.4064" layer="27">&gt;VALUE</text>
@@ -34873,7 +34873,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="104.14" y="119.38" size="1.27" layer="97">TSL2561
+<text x="104.14" y="119.38" size="1.27" layer="97">APDS-9301
 =====
 VDD Range: 2.7-3.6V
 Max Current: 0.6mA</text>
@@ -34925,7 +34925,7 @@ VDD</text>
 <wire x1="78.74" y1="76.2" x2="147.32" y2="76.2" width="0.254" layer="97" style="shortdash"/>
 <wire x1="78.74" y1="76.2" x2="78.74" y2="132.08" width="0.254" layer="97" style="shortdash"/>
 <text x="0.762" y="131.318" size="2.54" layer="94" align="top-left">BME280 - Humidity, Pressure, Temp</text>
-<text x="79.502" y="131.318" size="2.54" layer="94" align="top-left">TSL2561 - Luminosity (Lux)</text>
+<text x="79.502" y="131.318" size="2.54" layer="94" align="top-left">APDS-9301 - Luminosity (Lux)</text>
 <text x="0.762" y="75.438" size="2.54" layer="94" align="top-left">Weather Meter - Rainfall, Wind Speed, Wind Direction</text>
 <wire x1="0" y1="25.4" x2="91.44" y2="25.4" width="0.254" layer="97" style="shortdash"/>
 <wire x1="91.44" y1="25.4" x2="147.32" y2="25.4" width="0.254" layer="97" style="shortdash"/>
@@ -34949,10 +34949,10 @@ address of the BME280
 Open - 0x77
 Closed - 0x76</text>
 <text x="81.28" y="81.28" size="1.27" layer="97" align="center-left">JP3 sets the I2C 
-address of the TSL2561
-Open (both) - 0x39
-High - 0x49
-Low - 0x29</text>
+address of the APDS-9301
+Open (both) - 0x51
+High - 0x71
+Low - 0x91</text>
 <text x="111.76" y="157.48" size="1.27" layer="97" align="center-right">JP4 disconnects the on-
 board NTC thermistor,
 allowing an external
@@ -35002,9 +35002,9 @@ or DS18B20 (SEN-11050)</text>
 <instance part="R13" gate="G$1" x="149.86" y="160.02" rot="R90"/>
 <instance part="R14" gate="G$1" x="165.1" y="160.02" rot="R90"/>
 <instance part="SUPPLY18" gate="G$1" x="157.48" y="177.8"/>
-<instance part="C6" gate="G$1" x="139.7" y="116.84" rot="MR0"/>
-<instance part="SUPPLY17" gate="G$1" x="139.7" y="124.46"/>
-<instance part="GND15" gate="1" x="139.7" y="109.22"/>
+<instance part="C6" gate="G$1" x="139.7" y="114.3" rot="MR0"/>
+<instance part="SUPPLY17" gate="G$1" x="139.7" y="121.92"/>
+<instance part="GND15" gate="1" x="139.7" y="106.68"/>
 <instance part="SUPPLY1" gate="G$1" x="5.08" y="101.6"/>
 <instance part="R7" gate="G$1" x="91.44" y="111.76" rot="R90"/>
 <instance part="R4" gate="G$1" x="50.8" y="104.14" rot="R90"/>
@@ -35118,7 +35118,7 @@ or DS18B20 (SEN-11050)</text>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="139.7" y1="111.76" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="109.22" x2="139.7" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
@@ -35321,7 +35321,7 @@ or DS18B20 (SEN-11050)</text>
 <segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <pinref part="SUPPLY17" gate="G$1" pin="3.3V"/>
-<wire x1="139.7" y1="124.46" x2="139.7" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="121.92" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="U1" pin="VDD"/>
