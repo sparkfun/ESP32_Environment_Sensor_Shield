@@ -34961,7 +34961,7 @@ thermistor to be connected.</text>
 SDA and SCL 
 to 4.7k pull-up 
 resistors.</text>
-<text x="238.76" y="7.62" size="2.54" layer="94" align="center-left">V01</text>
+<text x="238.76" y="7.62" size="2.54" layer="94" align="center-left">02</text>
 <text x="170.18" y="7.62" size="2.54" layer="94" align="center-left">Jim Lindblom</text>
 <text x="119.38" y="20.32" size="1.27" layer="97" align="top-left">3-Pin temperature 
 sensor port supports
