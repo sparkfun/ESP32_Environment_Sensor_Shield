@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -16,9 +16,9 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -34,12 +34,12 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -3639,6 +3639,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="U3" library="SparkFun-Sensors" package="CHIPLED-6" value="APDS-9301" x="50.673" y="11.43" rot="R270">
 <attribute name="PROD_ID" value="IC-13662" x="50.673" y="11.43" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
+<element name="FD3" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="57.15" y="6.35" rot="MR0"/>
+<element name="FD4" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="6.35" y="48.26" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -4526,30 +4528,30 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="5,1,5bffc537954bb722"/>
 <approved hash="5,1,83f424160ef21591"/>
 <approved hash="19,16,714d1fef2c67d127"/>
-<approved hash="19,16,27cc6d5acda614d2"/>
-<approved hash="19,16,27cc6d5acda614d2"/>
-<approved hash="19,16,6c5307cb3467cc1d"/>
 <approved hash="19,16,6c5307cb3467cc1d"/>
 <approved hash="19,16,2ac26762c79e19dc"/>
-<approved hash="19,16,69cca3eea3626940"/>
+<approved hash="19,16,6c5307cb3467cc1d"/>
+<approved hash="19,16,27cc6d5acda614d2"/>
+<approved hash="19,16,27cc6d5acda614d2"/>
 <approved hash="19,16,64c2aee0ae6c644e"/>
+<approved hash="19,16,69cca3eea3626940"/>
 <approved hash="19,16,69cca3eea3626940"/>
 <approved hash="19,16,1d215562e316c889"/>
 <approved hash="19,16,4539acb1b4c822c2"/>
-<approved hash="19,16,69cca3eea3626940"/>
-<approved hash="19,16,64c2aee0ae6c644e"/>
-<approved hash="19,16,1d215562e316c889"/>
-<approved hash="19,16,64c2aee0ae6c644e"/>
 <approved hash="19,16,79f8b3dab3727950"/>
+<approved hash="19,16,64c2aee0ae6c644e"/>
 <approved hash="19,16,336812671d715fa2"/>
 <approved hash="19,16,64c2aee0ae6c644e"/>
-<approved hash="19,16,4539acb1b4c822c2"/>
+<approved hash="19,16,64c2aee0ae6c644e"/>
 <approved hash="19,16,22ebb1b0af3a5d41"/>
+<approved hash="19,16,69cca3eea3626940"/>
+<approved hash="19,16,1d215562e316c889"/>
+<approved hash="19,16,4539acb1b4c822c2"/>
 <approved hash="19,16,059b8e8b3e705416"/>
 <approved hash="19,16,e1d85bfa5aa8e08a"/>
-<approved hash="19,16,2242c851cbe6ab9b"/>
 <approved hash="19,16,5876f325f9beb39b"/>
 <approved hash="19,16,e7c515e714b5e697"/>
+<approved hash="19,16,2242c851cbe6ab9b"/>
 </errors>
 </board>
 </drawing>

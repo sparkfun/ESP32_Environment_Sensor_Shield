@@ -34869,6 +34869,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".1_INCH"/>
 <part name="U3" library="SparkFun-Sensors" deviceset="APDS-9301" device="" value="APDS-9301"/>
+<part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -35087,6 +35089,8 @@ or DS18B20 (SEN-11050)</text>
 <instance part="GND7" gate="1" x="76.2" y="33.02" rot="MR0"/>
 <instance part="LOGO3" gate="G$1" x="33.782" y="12.446"/>
 <instance part="U3" gate="G$1" x="116.84" y="99.06"/>
+<instance part="FD3" gate="G$1" x="236.22" y="27.94"/>
+<instance part="FD4" gate="G$1" x="236.22" y="25.4"/>
 </instances>
 <busses>
 </busses>
