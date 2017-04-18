@@ -33305,12 +33305,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <package name="CHIPLED-6">
 <description>CHIPLED-6 package &lt;br&gt;
 Used by APDS-9301</description>
-<smd name="P3" x="-1.65" y="0" dx="1.1" dy="0.7" layer="1" cream="no"/>
-<smd name="P6" x="1.65" y="0" dx="1.1" dy="0.7" layer="1" cream="no"/>
-<smd name="P2" x="-1.65" y="1.05" dx="1.1" dy="0.7" layer="1" cream="no"/>
-<smd name="P4" x="-1.65" y="-1.05" dx="1.1" dy="0.7" layer="1" cream="no"/>
-<smd name="P1" x="1.65" y="1.05" dx="1.1" dy="0.7" layer="1" cream="no"/>
-<smd name="P5" x="1.65" y="-1.05" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<smd name="P3" x="-1.1" y="0" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<smd name="P6" x="1.1" y="0" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<smd name="P2" x="-1.1" y="1" dx="1.1" dy="0.6" layer="1" cream="no"/>
+<smd name="P4" x="-1.1" y="-1" dx="1.1" dy="0.6" layer="1" cream="no"/>
+<smd name="P1" x="1.1" y="1" dx="1.1" dy="0.6" layer="1" cream="no"/>
+<smd name="P5" x="1.1" y="-1" dx="1.1" dy="0.6" layer="1" cream="no"/>
 <rectangle x1="1.2" y1="-1.3" x2="2.1" y2="-0.8" layer="31"/>
 <rectangle x1="1.2" y1="-0.25" x2="2.1" y2="0.25" layer="31"/>
 <rectangle x1="-2.1" y1="-0.25" x2="-1.2" y2="0.25" layer="31"/>
@@ -33321,7 +33321,7 @@ Used by APDS-9301</description>
 <wire x1="-1.3" y1="1.1" x2="1.3" y2="1.1" width="0.2032" layer="21"/>
 <wire x1="-1.3" y1="1.1" x2="-1.3" y2="-1.1" width="0.2032" layer="21"/>
 <wire x1="1.3" y1="1.1" x2="1.3" y2="-1.1" width="0.2032" layer="21"/>
-<circle x="1.81" y="2" radius="0.2" width="0.127" layer="21"/>
+<circle x="1.91" y="1.54" radius="0.2" width="0.127" layer="21"/>
 <text x="-1.016" y="0.381" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-0.508" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
@@ -34871,6 +34871,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U3" library="SparkFun-Sensors" deviceset="APDS-9301" device="" value="APDS-9301"/>
 <part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0603-16V-10%" value="1.0uF"/>
+<part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -34886,9 +34890,9 @@ Float
 VDD</text>
 <text x="111.252" y="109.22" size="1.27" layer="97">I2C Address
 =======
-0x51
-0x71
-0x91</text>
+0x29
+0x39
+0x49</text>
 <text x="15.24" y="111.76" size="1.27" layer="97">BME280
 =====
 VDD Range: 1.71-3.6V
@@ -34952,9 +34956,9 @@ Open - 0x77
 Closed - 0x76</text>
 <text x="81.28" y="81.28" size="1.27" layer="97" align="center-left">JP3 sets the I2C 
 address of the APDS-9301
-Open (both) - 0x51
-High - 0x71
-Low - 0x91</text>
+Open (both) - 0x39
+High - 0x49
+Low - 0x29</text>
 <text x="111.76" y="157.48" size="1.27" layer="97" align="center-right">JP4 disconnects the on-
 board NTC thermistor,
 allowing an external
@@ -34963,7 +34967,7 @@ thermistor to be connected.</text>
 SDA and SCL 
 to 4.7k pull-up 
 resistors.</text>
-<text x="238.76" y="7.62" size="2.54" layer="94" align="center-left">02</text>
+<text x="238.76" y="7.62" size="2.54" layer="94" align="center-left">03</text>
 <text x="170.18" y="7.62" size="2.54" layer="94" align="center-left">Jim Lindblom</text>
 <text x="119.38" y="20.32" size="1.27" layer="97" align="top-left">3-Pin temperature 
 sensor port supports
@@ -35031,10 +35035,13 @@ or DS18B20 (SEN-11050)</text>
 <instance part="GND9" gate="1" x="78.74" y="137.16"/>
 <instance part="SUPPLY11" gate="G$1" x="78.74" y="170.18"/>
 <instance part="JP4" gate="G$1" x="116.84" y="157.48" rot="R90"/>
-<instance part="J2" gate="G$1" x="116.84" y="48.26"/>
+<instance part="J2" gate="G$1" x="111.76" y="48.26" smashed="yes">
+<attribute name="VALUE" x="97.536" y="42.672" size="1.778" layer="96" font="vector" align="top-left"/>
+<attribute name="NAME" x="101.6" y="53.594" size="1.778" layer="95" font="vector"/>
+</instance>
 <instance part="J1" gate="G$1" x="22.86" y="48.26"/>
 <instance part="GND2" gate="1" x="5.08" y="30.48"/>
-<instance part="GND10" gate="1" x="101.6" y="33.02" rot="MR0"/>
+<instance part="GND10" gate="1" x="96.52" y="33.02" rot="MR0"/>
 <instance part="R9" gate="G$1" x="132.08" y="55.88" rot="R90"/>
 <instance part="H3" gate="G$1" x="246.38" y="27.94"/>
 <instance part="H4" gate="G$1" x="246.38" y="25.4"/>
@@ -35091,6 +35098,13 @@ or DS18B20 (SEN-11050)</text>
 <instance part="U3" gate="G$1" x="116.84" y="99.06"/>
 <instance part="FD3" gate="G$1" x="236.22" y="27.94"/>
 <instance part="FD4" gate="G$1" x="236.22" y="25.4"/>
+<instance part="C3" gate="G$1" x="129.54" y="40.64"/>
+<instance part="C5" gate="G$1" x="55.88" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="53.086" y="35.941" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="52.832" y="32.385" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="GND13" gate="1" x="60.96" y="27.94" rot="MR0"/>
+<instance part="GND20" gate="1" x="129.54" y="33.02" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -35171,8 +35185,8 @@ or DS18B20 (SEN-11050)</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="48.26" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="48.26" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="48.26" x2="96.52" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -35234,6 +35248,17 @@ or DS18B20 (SEN-11050)</text>
 <wire x1="101.6" y1="93.98" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <wire x1="101.6" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="58.42" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="33.02" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND20" gate="1" pin="GND"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="35.56" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -35602,24 +35627,27 @@ or DS18B20 (SEN-11050)</text>
 <segment>
 <label x="134.62" y="48.26" size="1.27" layer="95" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="48.26" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="48.26" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
 <junction x="132.08" y="48.26"/>
 <wire x1="134.62" y1="48.26" x2="132.08" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="B1" gate="G$1" pin="12"/>
-<wire x1="160.02" y1="60.96" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="8"/>
-<wire x1="160.02" y1="60.96" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
-<label x="160.02" y="60.96" size="1.778" layer="95"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="45.72" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
+<junction x="129.54" y="48.26"/>
 </segment>
 <segment>
 <pinref part="U4" gate="U1" pin="IO2"/>
 <wire x1="78.74" y1="40.64" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="38.1" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
 <label x="81.28" y="38.1" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="25"/>
+<pinref part="J4" gate="G$1" pin="12"/>
+<wire x1="160.02" y1="71.12" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
+<label x="160.02" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="NTC_SENSE" class="0">
@@ -35670,8 +35698,13 @@ or DS18B20 (SEN-11050)</text>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="53.34" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
 <junction x="45.72" y="40.64"/>
+<wire x1="53.34" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
+<label x="53.34" y="40.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
-<label x="48.26" y="40.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="50.8" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="33.02" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
+<junction x="48.26" y="40.64"/>
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="14"/>
@@ -35736,13 +35769,6 @@ or DS18B20 (SEN-11050)</text>
 <pinref part="B1" gate="G$1" pin="!RST!"/>
 <pinref part="J4" gate="G$1" pin="6"/>
 <wire x1="160.02" y1="55.88" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="B1" gate="G$1" pin="25"/>
-<pinref part="J4" gate="G$1" pin="12"/>
-<wire x1="160.02" y1="71.12" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -36149,6 +36175,13 @@ or DS18B20 (SEN-11050)</text>
 <pinref part="B1" gate="G$1" pin="2"/>
 <pinref part="J13" gate="G$1" pin="10"/>
 <wire x1="210.82" y1="66.04" x2="236.22" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="8"/>
+<pinref part="B1" gate="G$1" pin="12"/>
+<wire x1="160.02" y1="60.96" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
