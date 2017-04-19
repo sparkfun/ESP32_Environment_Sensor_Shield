@@ -33305,18 +33305,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <package name="CHIPLED-6">
 <description>CHIPLED-6 package &lt;br&gt;
 Used by APDS-9301</description>
-<smd name="P3" x="-1.1" y="0" dx="1.1" dy="0.7" layer="1" cream="no"/>
-<smd name="P6" x="1.1" y="0" dx="1.1" dy="0.7" layer="1" cream="no"/>
-<smd name="P2" x="-1.1" y="1" dx="1.1" dy="0.6" layer="1" cream="no"/>
-<smd name="P4" x="-1.1" y="-1" dx="1.1" dy="0.6" layer="1" cream="no"/>
-<smd name="P1" x="1.1" y="1" dx="1.1" dy="0.6" layer="1" cream="no"/>
-<smd name="P5" x="1.1" y="-1" dx="1.1" dy="0.6" layer="1" cream="no"/>
-<rectangle x1="1.2" y1="-1.3" x2="2.1" y2="-0.8" layer="31"/>
-<rectangle x1="1.2" y1="-0.25" x2="2.1" y2="0.25" layer="31"/>
-<rectangle x1="-2.1" y1="-0.25" x2="-1.2" y2="0.25" layer="31"/>
-<rectangle x1="1.2" y1="0.8" x2="2.1" y2="1.3" layer="31"/>
-<rectangle x1="-2.1" y1="-1.3" x2="-1.2" y2="-0.8" layer="31"/>
-<rectangle x1="-2.1" y1="0.8" x2="-1.2" y2="1.3" layer="31"/>
+<smd name="P3" x="-1.1" y="0" dx="1.1" dy="0.7" layer="1"/>
+<smd name="P6" x="1.1" y="0" dx="1.1" dy="0.7" layer="1"/>
+<smd name="P2" x="-1.1" y="1" dx="1.1" dy="0.6" layer="1"/>
+<smd name="P4" x="-1.1" y="-1" dx="1.1" dy="0.6" layer="1"/>
+<smd name="P1" x="1.1" y="1" dx="1.1" dy="0.6" layer="1"/>
+<smd name="P5" x="1.1" y="-1" dx="1.1" dy="0.6" layer="1"/>
 <wire x1="-1.3" y1="-1.1" x2="1.3" y2="-1.1" width="0.2032" layer="21"/>
 <wire x1="-1.3" y1="1.1" x2="1.3" y2="1.1" width="0.2032" layer="21"/>
 <wire x1="-1.3" y1="1.1" x2="-1.3" y2="-1.1" width="0.2032" layer="21"/>
@@ -34968,7 +34962,7 @@ SDA and SCL
 to 4.7k pull-up 
 resistors.</text>
 <text x="238.76" y="7.62" size="2.54" layer="94" align="center-left">03</text>
-<text x="170.18" y="7.62" size="2.54" layer="94" align="center-left">Jim Lindblom</text>
+<text x="170.18" y="7.62" size="2.54" layer="94" align="center-left">Jim Lindblom/Mike Hord</text>
 <text x="119.38" y="20.32" size="1.27" layer="97" align="top-left">3-Pin temperature 
 sensor port supports
 MAX31820 (SEN-14049)
