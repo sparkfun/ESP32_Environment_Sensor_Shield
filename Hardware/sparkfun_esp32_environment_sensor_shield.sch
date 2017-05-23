@@ -34961,7 +34961,7 @@ thermistor to be connected.</text>
 SDA and SCL 
 to 4.7k pull-up 
 resistors.</text>
-<text x="238.76" y="7.62" size="2.54" layer="94" align="center-left">03</text>
+<text x="238.76" y="7.62" size="2.54" layer="94" align="center-left">10</text>
 <text x="170.18" y="7.62" size="2.54" layer="94" align="center-left">Jim Lindblom/Mike Hord</text>
 <text x="119.38" y="20.32" size="1.27" layer="97" align="top-left">3-Pin temperature 
 sensor port supports
@@ -35604,17 +35604,16 @@ or DS18B20 (SEN-11050)</text>
 <junction x="38.1" y="50.8"/>
 </segment>
 <segment>
-<pinref part="B1" gate="G$1" pin="27"/>
-<wire x1="160.02" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="10"/>
-<wire x1="160.02" y1="66.04" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
-<label x="160.02" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="73.66" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="U4" gate="U1" pin="IO4"/>
 <wire x1="73.66" y1="55.88" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
 <label x="71.12" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="35"/>
+<pinref part="J4" gate="G$1" pin="13"/>
+<wire x1="160.02" y1="73.66" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
+<label x="160.02" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RAINFALL" class="0">
@@ -35763,13 +35762,6 @@ or DS18B20 (SEN-11050)</text>
 <pinref part="B1" gate="G$1" pin="!RST!"/>
 <pinref part="J4" gate="G$1" pin="6"/>
 <wire x1="160.02" y1="55.88" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="B1" gate="G$1" pin="35"/>
-<pinref part="J4" gate="G$1" pin="13"/>
-<wire x1="160.02" y1="73.66" x2="185.42" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -36176,6 +36168,13 @@ or DS18B20 (SEN-11050)</text>
 <pinref part="J4" gate="G$1" pin="8"/>
 <pinref part="B1" gate="G$1" pin="12"/>
 <wire x1="160.02" y1="60.96" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="10"/>
+<pinref part="B1" gate="G$1" pin="27"/>
+<wire x1="160.02" y1="66.04" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

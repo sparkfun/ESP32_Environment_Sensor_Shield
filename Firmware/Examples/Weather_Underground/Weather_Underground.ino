@@ -9,8 +9,10 @@
     APDS9301 apds;
     
     // Variables for wifi server setup 
-    const char* ssid     = "my_ssid";
-    const char* password = "my_password";   
+    const char* ssid     = "ssid_goes_here";
+    const char* password = "password_goes_here"; 
+    String ID = "station_id_goes_here";
+    String key = "wunderground_key_goes_here";  
     WiFiClient client;
     const int httpPort = 80;
     const char* host = "weatherstation.wunderground.com";
@@ -38,26 +40,30 @@
     // Pin assignment definitions
     #define WIND_SPD_PIN 14
     #define RAIN_PIN     25
-    #define WIND_DIR_PIN 27
+    #define WIND_DIR_PIN 35
     #define AIR_RST      4
     #define AIR_WAKE     15
+    #define DONE_LED     5
     
     void setup() 
     {
       delay(5);    // The CCS811 wants a brief delay after startup.
       Serial.begin(115200);
       Wire.begin();
+
+      pinMode(DONE_LED, OUTPUT);
+      digitalWrite(DONE_LED, LOW);
     
       // Wind speed sensor setup. The windspeed is calculated according to the number
       //  of ticks per second. Timestamps are captured in the interrupt, and then converted
       //  into mph. 
       pinMode(WIND_SPD_PIN, INPUT);     // Wind speed sensor
-      //attachInterrupt(digitalPinToInterrupt(WIND_SPD_PIN), windTick, RISING);
+      attachInterrupt(digitalPinToInterrupt(WIND_SPD_PIN), windTick, RISING);
     
       // Rain sesnor setup. Rainfall is tracked by ticks per second, and timestamps of
       //  ticks are tracked so rainfall can be "aged" (i.e., rain per hour, per day, etc)
       pinMode(RAIN_PIN, INPUT);     // Rain sensor
-      //attachInterrupt(digitalPinToInterrupt(RAIN_PIN), rainTick, RISING);
+      attachInterrupt(digitalPinToInterrupt(RAIN_PIN), rainTick, RISING);
       // Zero out the timestamp array.
       for (int i = 0; i < NO_RAIN_SAMPLES; i++) rainTickList[i] = 0;
     
@@ -86,7 +92,9 @@
     
       // APDS9301 sensor setup. Leave the default settings in place.
       apds.begin(0x39);
-      
+
+
+      // Connect to WiFi network
       Serial.print("Connecting to ");
       Serial.println(ssid);
     
@@ -99,7 +107,10 @@
       Serial.println("");
       Serial.println("WiFi connected");
       Serial.println("IP address: ");
-      //Serial.println(WiFi.localIP());
+      Serial.println(WiFi.localIP());
+
+      // Visible WiFi connected signal for when serial isn't connected
+      digitalWrite(DONE_LED, HIGH);
     }
     
     void loop() 
@@ -218,8 +229,6 @@
       wundergroundUpdateTimer = millis();
         // Set up the generic use-every-time part of the URL
         String url = "/weatherstation/updateweatherstation.php";
-        String ID = "my_wunderground_id";
-        String key = "my_wunderground_key";
         url += "?ID=";
         url += ID;
         url += "&PASSWORD=";
