@@ -17,10 +17,10 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -34,12 +34,12 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -473,14 +473,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="ESP32_THING">
-<description>&lt;h3&gt;SparkFun ESP32 Thing Board&lt;/h3&gt;
-&lt;p&gt;Pins, silkscreen, and logos matching the layout of the &lt;a href=https://www.sparkfun.com/products/13907&gt;SparkFun ESP32 Thing&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count: 40&lt;/li&gt;
-&lt;li&gt;Area: 2.32" x 1.00"&lt;/li&gt;
-&lt;/p&gt;</description>
+<package name="ESP32_THING_NO_ANT">
 <pad name="1" x="1.27" y="1.27" drill="1.016" diameter="1.8796" shape="square" rot="R180"/>
 <pad name="2" x="1.27" y="3.81" drill="1.016" diameter="1.8796" rot="R180"/>
 <pad name="3" x="1.27" y="6.35" drill="1.016" diameter="1.8796" rot="R180"/>
@@ -571,22 +564,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="23.2029" y="1.27" size="0.889" layer="51" font="vector" ratio="15" align="center-right">GND</text>
 <text x="12.7" y="2.54" size="0.6096" layer="25" font="vector" ratio="20" align="top-center">&gt;Name</text>
 <text x="12.7" y="1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-<polygon width="0.127" layer="41">
-<vertex x="0" y="51.435"/>
-<vertex x="25.4" y="51.435"/>
-<vertex x="25.4" y="58.928"/>
-<vertex x="21.463" y="58.928"/>
-<vertex x="0" y="58.928"/>
-</polygon>
-<polygon width="0.127" layer="42">
-<vertex x="0" y="51.435"/>
-<vertex x="25.4" y="51.435"/>
-<vertex x="25.4" y="58.928"/>
-<vertex x="21.463" y="58.928"/>
-<vertex x="0" y="58.928"/>
-</polygon>
-<text x="12.7" y="52.324" size="0.889" layer="51" font="vector" align="center">Antenna Keepout</text>
-<wire x1="0" y1="51.435" x2="25.4" y2="51.435" width="0.127" layer="51"/>
 </package>
 </packages>
 </library>
@@ -3534,9 +3511,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </pass>
 </autorouter>
 <elements>
-<element name="B1" library="SparkFun-Boards" package="ESP32_THING" value="ESP32_THING" x="16.51" y="0">
-<attribute name="SF_ID" value="DEV-13907" x="16.51" y="0" size="1.778" layer="27" display="off"/>
-</element>
+<element name="B1" library="SparkFun-Boards" package="ESP32_THING_NO_ANT" value="ESP32_THING_WO_ANT_KEEPOUT" x="16.51" y="0"/>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-13.97" y="-21.59"/>
 <element name="U2" library="esp32-environ-monitor-temp" package="LGA10-2.7X4.0MM" value="CCS811" x="50.8" y="25.4" rot="R90">
 <attribute name="PROD_ID" value="IC-13607" x="50.8" y="25.4" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
@@ -3618,7 +3593,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="VALUE" value="10k" x="54.864" y="21.59" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R12" library="esp32-environ-monitor-temp" package="AXIAL-0.1" value="DNP" x="57.15" y="25.4" rot="R270">
-<attribute name="PROD_ID" value="N/A" x="57.15" y="25.4" size="0.8128" layer="27" ratio="15" rot="R270" display="off"/>
 <attribute name="SF_ID" value="SEN-00250" x="57.15" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_.1" value="SFE_LOGO_NAME.1_INCH" x="45.466" y="5.715" rot="R90"/>

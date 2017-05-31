@@ -30192,6 +30192,98 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="ESP32_THING_NO_ANT">
+<pad name="1" x="1.27" y="1.27" drill="1.016" diameter="1.8796" shape="square" rot="R180"/>
+<pad name="2" x="1.27" y="3.81" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="3" x="1.27" y="6.35" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="4" x="1.27" y="8.89" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="5" x="1.27" y="11.43" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="6" x="1.27" y="13.97" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="7" x="1.27" y="16.51" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="8" x="1.27" y="19.05" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="9" x="1.27" y="21.59" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="10" x="1.27" y="24.13" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="11" x="1.27" y="26.67" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="12" x="1.27" y="29.21" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="13" x="1.27" y="31.75" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="14" x="1.27" y="34.29" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="15" x="1.27" y="36.83" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="16" x="1.27" y="39.37" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="17" x="1.27" y="41.91" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="18" x="1.27" y="44.45" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="19" x="1.27" y="46.99" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="20" x="1.27" y="49.53" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="40" x="24.13" y="1.27" drill="1.016" diameter="1.8796" shape="square" rot="R180"/>
+<pad name="39" x="24.13" y="3.81" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="38" x="24.13" y="6.35" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="37" x="24.13" y="8.89" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="36" x="24.13" y="11.43" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="35" x="24.13" y="13.97" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="34" x="24.13" y="16.51" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="33" x="24.13" y="19.05" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="32" x="24.13" y="21.59" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="31" x="24.13" y="24.13" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="30" x="24.13" y="26.67" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="29" x="24.13" y="29.21" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="28" x="24.13" y="31.75" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="27" x="24.13" y="34.29" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="26" x="24.13" y="36.83" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="25" x="24.13" y="39.37" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="24" x="24.13" y="41.91" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="23" x="24.13" y="44.45" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="22" x="24.13" y="46.99" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="21" x="24.13" y="49.53" drill="1.016" diameter="1.8796" rot="R180"/>
+<wire x1="0" y1="0" x2="0" y2="51.435" width="0.2032" layer="51"/>
+<wire x1="0" y1="51.435" x2="0" y2="58.293" width="0.2032" layer="51"/>
+<wire x1="0" y1="58.293" x2="0.635" y2="58.928" width="0.2032" layer="51" curve="-90"/>
+<wire x1="0.635" y1="58.928" x2="24.765" y2="58.928" width="0.2032" layer="51"/>
+<wire x1="24.765" y1="58.928" x2="25.4" y2="58.293" width="0.2032" layer="51" curve="-90"/>
+<wire x1="25.4" y1="58.293" x2="25.4" y2="51.435" width="0.2032" layer="51"/>
+<wire x1="25.4" y1="51.435" x2="25.4" y2="0" width="0.2032" layer="51"/>
+<wire x1="25.4" y1="0" x2="0" y2="0" width="0.2032" layer="51"/>
+<text x="2.413" y="34.29" size="0.889" layer="51" font="vector" ratio="15" align="center-left">34</text>
+<text x="2.413" y="31.75" size="0.889" layer="51" font="vector" ratio="15" align="center-left">35</text>
+<text x="2.413" y="39.37" size="0.889" layer="51" font="vector" ratio="15" align="center-left">32</text>
+<text x="2.413" y="36.83" size="0.889" layer="51" font="vector" ratio="15" align="center-left">33</text>
+<text x="2.413" y="29.21" size="0.889" layer="51" font="vector" ratio="15" align="center-left">25</text>
+<text x="2.413" y="26.67" size="0.889" layer="51" font="vector" ratio="15" align="center-left">26</text>
+<text x="2.3876" y="24.13" size="0.889" layer="51" font="vector" ratio="15" align="center-left">27</text>
+<text x="2.3876" y="21.59" size="0.889" layer="51" font="vector" ratio="15" align="center-left">14</text>
+<text x="2.3876" y="19.05" size="0.889" layer="51" font="vector" ratio="15" align="center-left">12</text>
+<text x="2.413" y="16.637" size="0.889" layer="51" font="vector" ratio="15" align="center-left">13</text>
+<text x="2.413" y="6.477" size="0.889" layer="51" font="vector" ratio="15" align="center-left">VBAT</text>
+<text x="23.2029" y="36.83" size="0.889" layer="51" font="vector" ratio="15" align="center-right">19</text>
+<text x="23.2029" y="46.99" size="0.889" layer="51" font="vector" ratio="15" align="center-right">21</text>
+<text x="23.2283" y="39.37" size="0.889" layer="51" font="vector" ratio="15" align="center-right">22</text>
+<text x="23.2537" y="41.91" size="0.889" layer="51" font="vector" ratio="15" align="center-right">RX</text>
+<text x="23.2029" y="44.45" size="0.889" layer="51" font="vector" ratio="15" align="center-right">TX</text>
+<text x="23.2029" y="34.29" size="0.889" layer="51" font="vector" ratio="15" align="center-right">23</text>
+<text x="23.2029" y="31.75" size="0.889" layer="51" font="vector" ratio="15" align="center-right">18</text>
+<text x="23.2029" y="29.21" size="0.889" layer="51" font="vector" ratio="15" align="center-right">5</text>
+<text x="23.2029" y="26.67" size="0.889" layer="51" font="vector" ratio="15" align="center-right">15</text>
+<text x="23.2029" y="24.13" size="0.889" layer="51" font="vector" ratio="15" align="center-right">2</text>
+<text x="23.2029" y="21.59" size="0.889" layer="51" font="vector" ratio="15" align="center-right">0</text>
+<text x="23.2029" y="19.05" size="0.889" layer="51" font="vector" ratio="15" align="center-right">4</text>
+<text x="23.2029" y="16.51" size="0.889" layer="51" font="vector" ratio="15" align="center-right">17</text>
+<text x="23.2029" y="13.97" size="0.889" layer="51" font="vector" ratio="15" align="center-right">16</text>
+<text x="2.413" y="41.91" size="0.889" layer="51" font="vector" ratio="15" align="center-left">39</text>
+<text x="2.413" y="44.45" size="0.889" layer="51" font="vector" ratio="15" align="center-left">38</text>
+<text x="2.413" y="46.99" size="0.889" layer="51" font="vector" ratio="15" align="center-left">37</text>
+<text x="2.413" y="49.53" size="0.889" layer="51" font="vector" ratio="15" align="center-left">36</text>
+<text x="23.1267" y="49.53" size="0.889" layer="51" font="vector" ratio="15" align="center-right">GND</text>
+<text x="2.413" y="14.097" size="0.889" layer="51" font="vector" ratio="15" align="center-left">!RST!</text>
+<text x="2.413" y="11.557" size="0.889" layer="51" font="vector" ratio="15" align="center-left">3V3</text>
+<text x="2.413" y="9.017" size="0.889" layer="51" font="vector" ratio="15" align="center-left">GND</text>
+<text x="2.413" y="3.937" size="0.889" layer="51" font="vector" ratio="15" align="center-left">VUSB</text>
+<text x="2.413" y="1.397" size="0.889" layer="51" font="vector" ratio="15" align="center-left">GND</text>
+<text x="23.2029" y="11.43" size="0.889" layer="51" font="vector" ratio="15" align="center-right">3V3</text>
+<text x="23.2029" y="8.89" size="0.889" layer="51" font="vector" ratio="15" align="center-right">GND</text>
+<text x="23.2029" y="6.35" size="0.889" layer="51" font="vector" ratio="15" align="center-right">VBAT</text>
+<text x="23.2029" y="3.81" size="0.889" layer="51" font="vector" ratio="15" align="center-right">VUSB</text>
+<text x="23.2029" y="1.27" size="0.889" layer="51" font="vector" ratio="15" align="center-right">GND</text>
+<text x="12.7" y="2.54" size="0.6096" layer="25" font="vector" ratio="20" align="top-center">&gt;Name</text>
+<text x="12.7" y="1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
 <package name="ESP32_THING">
 <description>&lt;h3&gt;SparkFun ESP32 Thing Board&lt;/h3&gt;
 &lt;p&gt;Pins, silkscreen, and logos matching the layout of the &lt;a href=https://www.sparkfun.com/products/13907&gt;SparkFun ESP32 Thing&lt;/a&gt;&lt;/p&gt;
@@ -30370,7 +30462,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <gate name="G$1" symbol="ESP32_THING" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ESP32_THING">
+<device name="_W_ANT_KEEPOUT" package="ESP32_THING">
 <connects>
 <connect gate="G$1" pin="!RST!" pad="6"/>
 <connect gate="G$1" pin="0" pad="32"/>
@@ -30417,6 +30509,53 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="SF_ID" value="DEV-13907"/>
 </technology>
+</technologies>
+</device>
+<device name="_WO_ANT_KEEPOUT" package="ESP32_THING_NO_ANT">
+<connects>
+<connect gate="G$1" pin="!RST!" pad="6"/>
+<connect gate="G$1" pin="0" pad="32"/>
+<connect gate="G$1" pin="12" pad="8"/>
+<connect gate="G$1" pin="13" pad="7"/>
+<connect gate="G$1" pin="14" pad="9"/>
+<connect gate="G$1" pin="15" pad="30"/>
+<connect gate="G$1" pin="16" pad="35"/>
+<connect gate="G$1" pin="17" pad="34"/>
+<connect gate="G$1" pin="18" pad="28"/>
+<connect gate="G$1" pin="19" pad="26"/>
+<connect gate="G$1" pin="2" pad="31"/>
+<connect gate="G$1" pin="21" pad="22"/>
+<connect gate="G$1" pin="22" pad="25"/>
+<connect gate="G$1" pin="23" pad="27"/>
+<connect gate="G$1" pin="25" pad="12"/>
+<connect gate="G$1" pin="26" pad="11"/>
+<connect gate="G$1" pin="27" pad="10"/>
+<connect gate="G$1" pin="32" pad="16"/>
+<connect gate="G$1" pin="33" pad="15"/>
+<connect gate="G$1" pin="34" pad="14"/>
+<connect gate="G$1" pin="35" pad="13"/>
+<connect gate="G$1" pin="36" pad="20"/>
+<connect gate="G$1" pin="37" pad="19"/>
+<connect gate="G$1" pin="38" pad="18"/>
+<connect gate="G$1" pin="39" pad="17"/>
+<connect gate="G$1" pin="3V3@36" pad="36"/>
+<connect gate="G$1" pin="3V3@5" pad="5"/>
+<connect gate="G$1" pin="4" pad="33"/>
+<connect gate="G$1" pin="5" pad="29"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@21" pad="21"/>
+<connect gate="G$1" pin="GND@37" pad="37"/>
+<connect gate="G$1" pin="GND@4" pad="4"/>
+<connect gate="G$1" pin="GND@40" pad="40"/>
+<connect gate="G$1" pin="RX" pad="24"/>
+<connect gate="G$1" pin="TX" pad="23"/>
+<connect gate="G$1" pin="VBAT@3" pad="3"/>
+<connect gate="G$1" pin="VBAT@38" pad="38"/>
+<connect gate="G$1" pin="VUSB@2" pad="2"/>
+<connect gate="G$1" pin="VUSB@39" pad="39"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -31063,7 +31202,6 @@ Commonly found on CAT3 devices and some Microchip programmers.
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="TBD"/>
 <attribute name="SF_ID" value="SEN-00250"/>
 <attribute name="VALUE" value="10k" constant="no"/>
 </technology>
@@ -34772,7 +34910,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="B1" library="SparkFun-Boards" deviceset="ESP32_THING" device=""/>
+<part name="B1" library="SparkFun-Boards" deviceset="ESP32_THING" device="_WO_ANT_KEEPOUT"/>
 <part name="GND17" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND19" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U2" library="esp32-environ-monitor-temp" deviceset="CCS811" device=""/>
@@ -34850,9 +34988,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="JP5" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_2-NC_TRACE" device="_SILK" value=""/>
 <part name="R8" library="esp32-environ-monitor-temp" deviceset="NTC-THERMISTOR" device="-0603" value="10k"/>
-<part name="R12" library="esp32-environ-monitor-temp" deviceset="NTC-THERMISTOR" device="-AXIAL-0.1" value="DNP">
-<attribute name="PROD_ID" value="N/A"/>
-</part>
+<part name="R12" library="esp32-environ-monitor-temp" deviceset="NTC-THERMISTOR" device="-AXIAL-0.1" value="DNP"/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME" device=".1_INCH"/>
 <part name="LOGO4" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH"/>
