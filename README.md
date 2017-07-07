@@ -1,11 +1,11 @@
 SparkFun ESP32 Environment Sensor Shield
 ========================================
 
-![SparkFun Part Name](URL for picture of part)
+![SparkFun ESP32 Environment Sensor Shield](https://cdn.sparkfun.com//assets/parts/1/2/0/6/0/14153-01.jpg)
 
-[*SparkFun Part Name (SKU)*](URL for product on Sparkfun.com)
+[*SparkFun ESP32 Thing Environment Sensor Shield (DEV-14153)*](https://www.sparkfun.com/products/14153)
 
-<Basic description of the part.>
+The SparkFun ESP32 Thing Environment Sensor Shield provides sensors and hookups for monitoring environmental conditions. While incorporating three sensors capable of measuring five different environmental variables as well as providing connections for several other sensors, this sensor shield creates the best way to make your ESP32 Thing more accurate than your local weatherman!
 
 Repository Contents
 -------------------
@@ -17,7 +17,7 @@ Repository Contents
 
 Version History
 ---------------
-* [vExxFxxZxxHxxLxxSxx](URL for tag specific to this version) - Description 
+* [v_H1.0](https://github.com/sparkfun/ESP32_Environment_Sensor_Shield/tree/v_H1.0) - Initial release
 
 
 License Information
